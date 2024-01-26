@@ -1,4 +1,4 @@
-# Some useful keywords.
+# Some useful keywords
 
 ## Optional
 
@@ -7,7 +7,7 @@ You can mark a property in a type to be optional with "?"
 ```ts
 type TodoWithOptionalDescription = {
   title: string;
-  description?: string; //string | undefined
+  description?: string; // same as string | undefined
   completed: boolean;
 };
 ```

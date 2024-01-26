@@ -24,6 +24,6 @@ const currentUser: User = {
     name: "John",
     preferences: {
         language: "en",
-        theme: "light", //This shouldn't give an error.
+        theme: "light", // This shouldn't give an error.
     },
 };

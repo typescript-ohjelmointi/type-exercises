@@ -1,6 +1,6 @@
-# 1. Some basics to get going
+# Some basics to get going
 
-## 1.1. Very basic syntax
+## Very basic syntax
 
 ```ts
 const stringVariable: string = "string";
@@ -9,7 +9,7 @@ const booleanVariable: boolean = false;
 const numberArray: number[] = [1, 2, 3];
 ```
 
-## 1.2 Type keyword vs Interface:
+## Type keyword vs Interface:
 
 ```ts
 // These two ways are more or less equal and interchangable
@@ -22,8 +22,7 @@ const helloWithType: HelloWorldType = { value: "Hello" };
 const helloWithInterface: HelloWorldInterface = { value: "Hello" };
 ```
 
-
-## 1.3 Type inference (https://www.typescriptlang.org/docs/handbook/type-inference.html)
+## Type inference (https://www.typescriptlang.org/docs/handbook/type-inference.html)
 
 ```ts
 //Typescript will automatically try to infere the type when possible, so often you don't need to specify the type.

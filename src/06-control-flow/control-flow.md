@@ -1,4 +1,6 @@
-# 6. Typescript uses control flow analysis (CFA) to narrow down the type by following JavaScript logic.
+# Control flow analysis (CFA)
+
+Typescript uses control flow analysis (CFA) to narrow down the type by following JavaScript logic.
 
 ```ts
 const squared = (x: number | undefined) => {

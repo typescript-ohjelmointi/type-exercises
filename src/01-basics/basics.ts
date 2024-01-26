@@ -1,12 +1,10 @@
 // Define a type and an interface to represent a user profile.
 // Include fields name (string), email (string), and age (number).
-// In reality we would only pick either the type or the interface and use that.
+// (In reality we would only pick either the type or the interface and use that.)
 
-type UserProfileType = never; // TODO: Never indicated the values that will never occur, replace with actual type.
 
-interface UserProfileInterface { // TODO: Never indicated the values that will never occur, replace with actual type.
-    never;
-}
+// TODO: Never indicated the values that will never occur, replace it with actual type.
+type UserProfileType = never;
 
 // Change the above type, to that this works
 const userType: UserProfileType = {
@@ -14,6 +12,12 @@ const userType: UserProfileType = {
     email: "my@mail.com",
     age: 5,
 };
+
+
+// TODO: Never indicated the values that will never occur, replace with actual type.
+interface UserProfileInterface {
+    never;
+}
 
 // Change the above interface, to that this works
 const userInterface: UserProfileInterface = {

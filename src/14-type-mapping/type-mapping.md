@@ -6,16 +6,16 @@ https://learntypescript.dev/08/l2-mapped-type
 https://javascript.plainenglish.io/using-typescript-mapped-types-like-a-pro-be10aef5511a
 
 ```ts
-//type MappedTypeName = { [K in UnionType]: ExistingType };
-//type MappedTypeName = {[K in keyof ExistingType1]: ExistingType2;};
+// type MappedTypeName = { [K in UnionType]: ExistingType };
+// type MappedTypeName = {[K in keyof ExistingType1]: ExistingType2;};
 
-//k in ...
-//..manually. Try adding something else to in
+// k in ...
+// ..manually. Try adding something else to in
 type TodoConstucted = { [K in "title" | "description" | "completed"]: Todo[K] };
-//..utilizing keyof
+// ..utilizing keyof
 type TodoConstucted2 = { [K in keyof Todo]: Todo[K] }; //Todo[K] extracts the Type of the property being iterated at the moment.
 
-//14.1. Some examples of mapped types with generics
+// Some examples of mapped types with generics
 type MyMakeOptional<T> = {
   [P in keyof T]?: T[P];
 };
@@ -29,7 +29,7 @@ In exercises will be implementing the pick type similarly.
 
 ```ts
 const myArray = ["one", "two"] as const;
-type ArrayType = typeof myArray; //readonly ["one", "two"]
+type ArrayType = typeof myArray; // readonly ["one", "two"]
 type ValidNumber = (typeof myArray)[number]; // "one" | "two" string literal union
 ```
 
@@ -43,7 +43,7 @@ https://blog.logrocket.com/typescript-mapped-types/
 type User = {
   name: string;
   preferences: {
-    [key: string]: string; //any string properties accepted
+    [key: string]: string; // any string properties accepted
   };
 };
 
@@ -64,7 +64,7 @@ https://blog.logrocket.com/typescript-mapped-types/
 type AppConfig = {
   username: string;
   layout: string;
-  //more in the future possibly, try adding here something
+  // more in the future possibly, try adding here something
 };
 
 // Whether or not the user has permission to change configuration values
@@ -72,7 +72,7 @@ type AppPermissions = {
   // Notice the as-keyword
   // Notice template literal `change${Type}`
   // and "intrinsic string manipulation" (Capitalize)
-  //(https://www.typescriptlang.org/docs/handbook/2/template-literal-types.html)
+  // (https://www.typescriptlang.org/docs/handbook/2/template-literal-types.html)
   [Key in keyof AppConfig as `change${Capitalize<Key>}`]: boolean;
 };
 

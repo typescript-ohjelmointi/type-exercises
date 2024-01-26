@@ -1,4 +1,4 @@
-# 3. any, unknown types
+# Any, unknown types
 
 Typescript has special these types, which usually should be avoided.
 

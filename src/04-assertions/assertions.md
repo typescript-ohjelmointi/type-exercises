@@ -1,4 +1,4 @@
-# 4. Type assertions with "as" keyword, usually as casting should be avoided.
+# Type assertions with "as" keyword, usually as casting should be avoided.
 
 ```ts
 const forceBarToFoo = bar as Foo;

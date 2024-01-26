@@ -1,4 +1,6 @@
-# 7. Extending interfaces to intersection type (https://javascript.plainenglish.io/using-typescript-intersection-types-like-a-pro-a55da6a6a5f7)
+# Extending interfaces to intersection type
+
+See https://javascript.plainenglish.io/using-typescript-intersection-types-like-a-pro-a55da6a6a5f7
 
 ```ts
 interface Animal {
@@ -10,7 +12,7 @@ interface DogInterface extends Animal {
 const dog: DogInterface = { weight: 4, legs: true };
 ```
 
-## 7.1 Extending types
+## Extending types
 
 ```ts
 //OR same can be achieved with type keyword:

@@ -1,4 +1,4 @@
-# 8. Conditional types + extends keyword
+# Conditional types + extends keyword
 
 ```ts
 // "T extends string", T=string

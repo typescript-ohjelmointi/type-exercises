@@ -8,6 +8,7 @@ interface Todo {
   description: string;
   completed: boolean;
 }
-type KeysOfTodo = keyof Todo; //title | description | completed
+
+type KeysOfTodo = keyof Todo; // title | description | completed
 const titleKey: KeysOfTodo = "title";
 ```
