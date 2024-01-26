@@ -2,7 +2,11 @@
 
 This repository contains type exercises for the TypeScript course at https://typescript-ohjelmointi.github.io/ (in Finnish).
 
-Each subfolder in [src](./src/) contains a markdown file with an example usage of a specific TypeScript feature, and a TypeScript file, where you need to complete an exercise.
+Each subfolder in [src](./src/) contains a markdown file with an example usage of a specific TypeScript feature, and a TypeScript file, where you need to complete an exercise. Follow the instructions marked in the comments in the `.ts` files.
+
+Note that in most exercises, the code may not "do" anything when executed. Instead, we will focus more on defining the correct types that are used in compilation phase.
+
+To get your own copy of this exercise repository, either [clone it with the Git tool](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) or [download it as a zip archive](https://github.com/typescript-ohjelmointi/type-exercises/archive/master.zip).
 
 ## Project initialization
 
