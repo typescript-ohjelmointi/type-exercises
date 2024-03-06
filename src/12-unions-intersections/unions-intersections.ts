@@ -1,15 +1,25 @@
-// Create a function that takes a union type of strings and numbers
-// and demonstrates how to narrow down the type using type guards.
+// Write a function that calculates the area of a shape (Circle or Rectangle)
+// and handles each case appropriately.
+interface Rectangle {
+    kind: "rectangle";
+    width: number;
+    height: number;
+}
 
-// TODO: what needs the type of this typeguard be instead of never, so that this typeguard can be used to validate a number type.
-const isNumber = (value: any): never => {
-    return typeof value === "number";
-};
+interface Circle {
+    kind: "circle";
+    radius: number;
+}
 
-const printNumberFormatted = (value: any | number) => {
-    if (isNumber(value)) {
-        console.log("Not a number"); // it's not a number
-    } else {
-        console.log(value.toFixed(2)); // we can access the properties of number after asserting with the isNumber guard
+type Shape = Rectangle | Circle; //discriminated union type
+
+function calculateArea(shape: Shape): number {
+    switch (/*shape.???*/) { // TODO: How to switch by the shape's discriminant property to make this function work
+        case "rectangle":
+            return shape.width * shape.height; // this shouldn't give errors
+        case "circle":
+            return Math.PI * shape.radius * shape.radius; // this shouldn't give errors
+        default:
+            throw new Error("Invalid shape");
     }
-};
+}
