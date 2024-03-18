@@ -6,10 +6,10 @@ const isNumber = (value: any): never => {
     return typeof value === "number";
 };
 
-const printNumberFormatted = (value: any | number) => {
+const printNumberFormatted = (value: any | unknown) => {
     if (isNumber(value)) {
-        console.log("Not a number"); // it's not a number
-    } else {
         console.log(value.toFixed(2)); // we can access the properties of number after asserting with the isNumber guard
+    } else {
+        console.log("Not a number"); // it's not a number
     }
 };
