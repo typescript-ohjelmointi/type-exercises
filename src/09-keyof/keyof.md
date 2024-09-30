@@ -1,6 +1,6 @@
 # keyof-operator
 
-The keyof operator takes a type and returns a union of its keys.
+The keyof operator takes a type and returns a union of its keys. More on unions in later exercise.
 
 ```ts
 interface Todo {

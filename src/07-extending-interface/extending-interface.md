@@ -3,6 +3,8 @@
 See https://javascript.plainenglish.io/using-typescript-intersection-types-like-a-pro-a55da6a6a5f7
 
 ```ts
+//With interface keyword
+
 interface Animal {
   weight: number;
 }

@@ -1,8 +1,9 @@
-// This NumberOrString conditional type can be used to check whether a given Type is a number or a string.
-type NumberOrString<T> = T extends number ? number : string;
+type Hello = "Hello";
+type One = 1;
 
-const someText = "Hello"
-type typeForSomeText = string // TODO: Utilize NumberOrString and the type of someText to dynamically create a type based on someText's type.
+const someText: Hello = "Hello";
 
-const someNumber = 1
-type typeForSomeNumber = number // TODO: Utilize NumberOrString and the type of someNumber to dynamically create a type based on someNumber's type.
+type IsTextString = Hello extends string...  //TODO: complete with help of ternary, so that IsTextString will become true
+
+const someNumber: One = 1;
+type IsNumberString = One extends string... // TODO: complete with help of ternary, so that IsNumberString will become false

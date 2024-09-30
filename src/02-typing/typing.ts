@@ -12,7 +12,7 @@ let car: Car = {}; // TODO: What needs to be here?
 let bike: Bike = {}; // TODO: What needs to be here?
 
 if (typeof car === typeof bike) {
-  // will this block if be executed?
-  // write your answer here: (yes/no)
-  console.log("Will this block be executed?")
+  // will this if block be executed?
+  const yesno = "yes/no"; // TODO: write your answer here: (choose yes or no, not both)
+  console.log(`Will this block be executed: ${yesno}`);
 }
