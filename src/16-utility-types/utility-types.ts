@@ -1,8 +1,8 @@
 // Use utility types (Pick, Omit, Partial) to modify and extract properties from TodoPick.
 type TodoPick = {
-    title: string;
-    description: string;
-    completed: boolean;
+  title: string;
+  description: string;
+  completed: boolean;
 };
 
 // TODO: Make all properties of TodoPick optional with the help of Partial:
